@@ -10,13 +10,16 @@ describe('immutability', () => {
       return currentState + 1;
     }
 
+ 
     it('are immutable', () => {
       let state = 42;
       let nextState = increment(state);
 
       expect(nextState).to.equal(43);
       expect(state).to.equal(42);
-    });
+ 
+
+       });
 
   });
 
@@ -35,12 +38,14 @@ describe('immutability', () => {
         'Trainspotting',
         '28 Days Later',
         'Sunshine'
-      ));
+      ) );kj
       expect(state).to.equal(List.of(
         'Trainspotting',
         '28 Days Later'
-      ));
-    });
+      
+));
+      });
+      
 
   });
 
@@ -72,6 +77,8 @@ describe('immutability', () => {
       }));
     });
 
-  });
+       });
 
-});
+ 
+
+  });
